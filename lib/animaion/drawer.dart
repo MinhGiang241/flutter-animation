@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'lesson_1.dart';
 import 'lesson_2.dart';
+import 'lesson_3.dart';
 
 class MainDrawer extends StatelessWidget {
   const MainDrawer({super.key});
@@ -10,7 +11,8 @@ class MainDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     final data = [
       {"title": "lesson1", 'page': const Lesson1()},
-      {"title": "lesson2", 'page': const Lesson2()}
+      {"title": "lesson2", 'page': const Lesson2()},
+      {"title": "lesson3", 'page': const Lesson3()},
     ];
     return Drawer(
       child: ListView(children: [
