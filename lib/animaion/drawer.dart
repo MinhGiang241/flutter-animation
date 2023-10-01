@@ -4,6 +4,7 @@ import 'lesson_1.dart';
 import 'lesson_2.dart';
 import 'lesson_3.dart';
 import 'lesson_4.dart';
+import 'lesson_5.dart';
 
 class MainDrawer extends StatelessWidget {
   const MainDrawer({super.key});
@@ -15,6 +16,7 @@ class MainDrawer extends StatelessWidget {
       {"title": "lesson2", 'page': const Lesson2()},
       {"title": "lesson3", 'page': const Lesson3()},
       {"title": "lesson4", 'page': const Lesson4()},
+      {"title": "lesson5", 'page': const Lesson5()},
     ];
     return Drawer(
       child: ListView(children: [
