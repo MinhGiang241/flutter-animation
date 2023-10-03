@@ -12,7 +12,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(),
       drawer: MainDrawer(),
-      body: const Center(child: Text('Wellcome')),
+      body: const Center(child: Text('Welcome')),
     );
   }
 }
