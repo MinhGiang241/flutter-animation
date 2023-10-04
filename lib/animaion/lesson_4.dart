@@ -41,8 +41,8 @@ class Lesson4 extends StatelessWidget {
 }
 
 const people = [
-  Person(name: 'John', age: 20, emoji: '🧑'),
-  Person(name: 'Jane', age: 21, emoji: '🦰'),
+  Person(name: 'John', age: 20, emoji: '⛽'),
+  Person(name: 'Jane', age: 21, emoji: '☔'),
   Person(name: 'Jack', age: 22, emoji: '🎅'),
 ];
 
