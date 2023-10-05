@@ -8,7 +8,7 @@ class Lesson4 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('people'),
+          title: const Text('Lesson 4'),
         ),
         drawer: const MainDrawer(),
         body: ListView.builder(

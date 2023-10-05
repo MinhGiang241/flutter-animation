@@ -62,7 +62,9 @@ class _Lesson3State extends State<Lesson3> with TickerProviderStateMixin {
       ..repeat();
 
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: const Text("Lesson 3"),
+      ),
       drawer: const MainDrawer(),
       body: SafeArea(
         child: Column(

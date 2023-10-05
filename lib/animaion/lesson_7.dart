@@ -64,7 +64,9 @@ class _Lesson7State extends State<Lesson7> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: const Text("Lesson 7"),
+      ),
       drawer: const MainDrawer(),
       body: Center(
         child: AnimatedBuilder(

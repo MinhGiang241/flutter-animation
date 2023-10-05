@@ -63,8 +63,7 @@ class _Lesson9State extends State<Lesson9> with SingleTickerProviderStateMixin {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Icons"),
-        centerTitle: true,
+        title: const Text("Lesson 9"),
       ),
       drawer: const MainDrawer(),
       body: Center(

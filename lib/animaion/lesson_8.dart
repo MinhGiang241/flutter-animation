@@ -3,12 +3,14 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 import 'lesson_1.dart';
+import 'lesson_10/lesson_10.dart';
 import 'lesson_2.dart';
 import 'lesson_3.dart';
 import 'lesson_4.dart';
 import 'lesson_5.dart';
 import 'lesson_6.dart';
 import 'lesson_7.dart';
+import 'lesson_9.dart';
 
 class Lesson8 extends StatefulWidget {
   const Lesson8({super.key});
@@ -26,6 +28,8 @@ const data = [
   {"title": "lesson6", 'page': Lesson6()},
   {"title": "lesson7", 'page': Lesson7()},
   {"title": "lesson8", 'page': Lesson8()},
+  {"title": "lesson9", 'page': Lesson9()},
+  {"title": "lesson10", 'page': Lesson10()},
 ];
 
 class _Lesson8State extends State<Lesson8> with TickerProviderStateMixin {
@@ -34,7 +38,7 @@ class _Lesson8State extends State<Lesson8> with TickerProviderStateMixin {
       color: Colors.cyan,
       child: ListView.builder(
         padding: const EdgeInsets.only(left: 100, top: 100),
-        itemCount: 8,
+        itemCount: 10,
         itemBuilder: (context, index) {
           return ListTile(
             title: Text(data[index]['title'] as String),
@@ -125,9 +129,12 @@ class _Lesson8State extends State<Lesson8> with TickerProviderStateMixin {
                   ..setEntry(3, 2, 0.001)
                   ..translate(_xControllerForChild.value * maxDrag)
                   ..rotateY(_yRotationAnimationForChild.value),
-                child: const Scaffold(
+                child: Scaffold(
+                  appBar: AppBar(
+                    title: const Text("Lesson 8"),
+                  ),
                   backgroundColor: Colors.purpleAccent,
-                  body: Center(child: Text('Hello')),
+                  body: const Center(child: Text('Hello')),
                 ),
               ),
               Transform(

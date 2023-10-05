@@ -156,7 +156,9 @@ class _Lesson2State extends State<Lesson2> with TickerProviderStateMixin {
       ..forward.delayed(const Duration(seconds: 1));
 
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text("Lesson 2"),
+      ),
       drawer: MainDrawer(),
       body: AnimatedBuilder(
           animation: _counterClockwiseRotationAnimation,

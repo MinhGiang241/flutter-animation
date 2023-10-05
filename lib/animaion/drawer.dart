@@ -2,6 +2,7 @@ import 'package:animation/animaion/lesson_6.dart';
 import 'package:flutter/material.dart';
 
 import 'lesson_1.dart';
+import 'lesson_10/lesson_10.dart';
 import 'lesson_2.dart';
 import 'lesson_3.dart';
 import 'lesson_4.dart';
@@ -25,6 +26,7 @@ class MainDrawer extends StatelessWidget {
       {"title": "lesson7", 'page': const Lesson7()},
       {"title": "lesson8", 'page': const Lesson8()},
       {"title": "lesson9", 'page': const Lesson9()},
+      {"title": "lesson10", 'page': const Lesson10()},
     ];
     return Drawer(
       child: ListView(children: [

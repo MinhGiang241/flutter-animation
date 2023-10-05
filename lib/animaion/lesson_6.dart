@@ -14,7 +14,9 @@ class _Lesson6State extends State<Lesson6> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: const Text("Lesson 6"),
+      ),
       drawer: const MainDrawer(),
       body: ClipPath(
           clipper: const CircleClipper(),

@@ -36,7 +36,9 @@ class _Lesson1State extends State<Lesson1> with SingleTickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text("Lesson 1"),
+      ),
       drawer: MainDrawer(),
       body: Center(
           child: AnimatedBuilder(
